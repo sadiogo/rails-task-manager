@@ -1,0 +1,11 @@
+<div class="container">
+  <%= form_for(@task, :html => {:id => "new_task"}) do |f| %>
+    <%= f.label :title %><br>
+    <%= f.text_field(:title, size: '110%') %><br>
+    <br>
+    <%= f.label :details %><br>
+    <%= f.text_area(:details, size: '100x10') %><br>
+    <br>
+    <%= f.submit %>
+  <% end %>
+</div>

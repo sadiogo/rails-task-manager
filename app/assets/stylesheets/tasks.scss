@@ -1,3 +1,57 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#tasks-list {
+  list-style: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 18px;
+  li {
+    margin: 10px 0;
+    a {
+      text-decoration: none;
+      color: saddlebrown;
+    }
+  }
+}
+
+p.details {
+  background-color: azure;
+  padding: 15px;
+  border: 1px solid rgba($color: #777777, $alpha: 0.3);
+  box-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.3);
+}
+
+#new_task {
+  margin: 0 auto;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#edit-btn {
+  color: #000000;
+  background-color: rgba($color: #f6a13f, $alpha: 0.4);
+  border: 1px solid rgba($color: #777777, $alpha: 0.4);
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba($color: #777777, $alpha: 0.3);
+  i {
+    font-size: 12px;
+  }
+}
+
+#delete-icon {
+  color: red;
+  font-size: 13px;
+}
